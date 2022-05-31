@@ -1,4 +1,4 @@
-# Vue Vite Chome Extension Template
+# Vue Vite Chrome Extension Template
 
 This template should help get you started developing a Vue 3 Chrome Extension in Vite using the [rxjs/vite-plugin](https://github.com/crxjs/chrome-extension-tools)
 
