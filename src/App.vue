@@ -13,6 +13,7 @@
       		<nav>
         		<RouterLink to="/">Home</RouterLink>
         		<RouterLink to="/about">About</RouterLink>
+        		<RouterLink to="/contact">Contact</RouterLink>
       		</nav>
     	</div>
   	</header>
@@ -23,6 +24,7 @@
 @import '@/assets/base.css';
 
 #app {
+    min-width: 500px;
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;

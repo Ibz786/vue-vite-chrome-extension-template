@@ -16,9 +16,17 @@ const router = createRouter({
 			// this generates a separate chunk (About.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
 			component: () => import('../views/AboutView.vue')
+		},
+        {
+			path: '/contact',
+			name: 'contact',
+			component: () => import('../views/ContactView.vue')
 		}
   	]
 });
 
-await router.push({ path: '/' }); // Redirects route from index.html to '/' when loading Options page
+// Redirects route from index.html to '/' when initially load Extension
+router.beforeEach((to) => {
+    if(to.path === "/index.html") return '/';
+});
 export default router;
