@@ -1,11 +1,14 @@
 {
     "manifest_version": 3,
     "name": "Vue Vite Chrome Extension Example",
+    "description": "Vue Vite Chrome Extension made with 'crxjs': https://github.com/crxjs/chrome-extension-tools",
     "version": "1.0.0",
     "action": {
         "default_title": "Vue Vite",
-        "default_popup": "index.html"
+        "default_popup": "popup.html"
     },
-    "description": "Vue Vite Chrome Extension made with 'crxjs': https://github.com/crxjs/chrome-extension-tools",
-    "options_page": "index.html"
+    "options_ui": {
+        "page": "index.html",
+        "open_in_tab": true
+    }
 }

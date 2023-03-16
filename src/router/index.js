@@ -9,6 +9,16 @@ const router = createRouter({
 			name: 'home',
 			component: HomeView
 		},
+        {
+            // Redirects route from index.html to '/' when initially load Extension
+            path: '/index.html',
+            redirect: '/'
+        },
+        {
+            // Redirects route from index.html to '/' when initially load Extension
+            path: '/popup.html',
+            redirect: '/'
+        },
 		{
 			path: '/about',
 			name: 'about',
@@ -25,8 +35,4 @@ const router = createRouter({
   	]
 });
 
-// Redirects route from index.html to '/' when initially load Extension
-router.beforeEach((to) => {
-    if(to.path === "/index.html") return '/';
-});
 export default router;
